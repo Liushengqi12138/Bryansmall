@@ -39,7 +39,7 @@
 			return;
 		}
 		
-		var b = window.confirm("您确认把书的数量修改为" + quantity + "吗？");
+		var b = window.confirm("您确认把商品的数量修改为" + quantity + "吗？");
 		if (b) {
 			window.location.href = "${pageContext.request.contextPath }/ChangeQuantityServlet?id=" + id + "&quantity=" + quantity;
 		}
