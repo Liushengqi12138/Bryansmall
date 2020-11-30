@@ -16,7 +16,7 @@
 	<div style="float: right;">
 		<c:if test="${user == null }">
 			<h2>欢迎光临，记得先登录后购物哦↓</h2>
-			<form action="/Bryansmall/client/LoginServlet" method="post">
+			<form action="/client/LoginServlet" method="post">
 				用户名：<input type="text" name="username" style="width: 50px">
 				密码：<input type="password" name="password" style="width: 50px">
 				<input type="submit" value="登录"> 
@@ -24,7 +24,7 @@
 			</form>
 		</c:if>
 		<c:if test="${user != null }">
-			<form action="/Bryansmall/client/LogoutServlet" method="post">
+			<form action="/client/LogoutServlet" method="post">
 				欢迎您，${user.username }
 				<input type="submit" value="注销"> 
 			</form>
